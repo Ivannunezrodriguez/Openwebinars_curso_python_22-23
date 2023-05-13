@@ -31,7 +31,7 @@ print("conectado a la base de datos de ", database)
 
 #ejecutamos el cursor
 cur = con.cursor()
-cur.execute("INSERT INTO res_users (login,company_id,partner_id) VALUES (%s,'%s','%s')",(usuario,1,9))
+cur.execute("INSERT INTO res_users (login,company_id,partner_id,notification_type) VALUES (%s,'%s','%s',%s)",(usuario,1,9,"email"))
 con.commit()
 print("Guardado correctamente ")
 con.close()

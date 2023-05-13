@@ -1,6 +1,7 @@
 #importamos
 import re
 import psycopg2
+from actividad5.ejercicio1 import compruebaNombre_modulo
 #creamos el codigo necesario
 def validar_contrasena(password):
 
@@ -36,7 +37,7 @@ print("conectado a la base de datos de ", database)
 
 #ejecutamos el cursor
 cur = con.cursor()
-cur.execute("INSERT INTO res_users (password,company_id,partner_id) VALUES (%s,'%s','%s')",(password,1,9))
+cur.execute("INSERT INTO res_users (login,password,company_id,partner_id,notification_type) VALUES (%s,'%s','%s',%s)",(compruebaNombre_modulo.usuario,password,1,9,"email"))
 con.commit()
 print("Guardado correctamente ")
 con.close()

@@ -18,8 +18,8 @@ print("conectado a la base de datos de ", database)
 
 #ejecutamos el cursor
 cur = con.cursor()
-cur.execute("INSERT INTO res_users (login,password,company_id,partner_id) VALUES (%s,%s,'%s','%s')",
-            (compruebaNombre_modulo.usuario,compruebaContrasena_modulo.password,1,9))
+cur.execute("INSERT INTO res_users (login,password,company_id,partner_id,notification_type) VALUES (%s,%s,'%s','%s',%s)",
+            (compruebaNombre_modulo.usuario,compruebaContrasena_modulo.password,1,9,"email"))
 con.commit()
 print("Guardado correctamente ")
 con.close()
