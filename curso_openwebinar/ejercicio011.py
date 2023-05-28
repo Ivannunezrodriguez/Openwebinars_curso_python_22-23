@@ -4,11 +4,11 @@ descuento=precio*0.15
 resultado=print("el precio final es ",(precio-descuento),"sobre el precio original que es ",precio)
 #Un alumno desea saber cual será su calificación final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:
 #55% del promedio de sus tres calificaciones parciales.
-#30% de la calificación del examen final.
+#30% de la calificación del examen_conmodulos.py final.
 #15% de la calificación de un trabajo final.
 import math
 trabajofinal=float(input("introduzca nota trabajo final "))
-examenfinal=float(input("introduzca nota examen final "))
+examenfinal=float(input("introduzca nota examen_conmodulos.py final "))
 parcial1=float(input("introduzca nota parcial1"))
 parcial2=float(input("introduzca nota parcial2"))
 parcial3=float(input("introduzca nota parcial3"))
