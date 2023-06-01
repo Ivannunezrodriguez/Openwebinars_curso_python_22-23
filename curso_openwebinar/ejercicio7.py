@@ -1,20 +1,18 @@
-cad1 ="hola"
-cad2='que tal'
-#la triple comilla hace salto de linea 
-cad3='''hola 
-que
-tal'''
+cad1 = "hola"
+cad2 = 'que tal'
+# la triple comillas hace salto de linea
+cad3 = '''Hola, ¿qué tal? '''
 print(cad1)
 print(cad2)
 print(cad3)
-#se pude multiplicar un string para que de mucha repeticieones
-cad5 =cad1*10
+# se puede multiplicar un string para que de mucha repetición
+cad5 = cad1 * 10
 print(cad5)
-#se puede pedir la posicion de una letra 
-cad1[0]
-#se puede saber la longitud 
+# se puede pedir la posicion de una letra
+var = cad1[0]
+# se puede saber la longitud
 print(len(cad3))
-#comparacion 
-print("a">"A")
-print("informatica"<"informacion")
-print("hola"=="Hola")
+# comparación
+print("a" > "A")
+print("informatica" < "información")
+print("hola" == "Hola")
