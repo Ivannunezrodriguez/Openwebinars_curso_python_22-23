@@ -1,0 +1,8 @@
+nombre=input("dime tu nombre")
+num=int(input("dame un numero entero"))
+nume=float(input("dame un numero real"))
+print ("el nombre es "+nombre)
+print("el numero es ")
+print(num)
+print ("el numero real es ")
+print(nume)
