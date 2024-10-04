@@ -31,7 +31,7 @@ def DiasDelMes(month,year):
 def Calcular_Dia_Juliano(day,month,year):
 	diaj = 0
 	for mes in range(1,month):
-		diaj = diaj + DiasDelMes(mes,year)
+		diaj = diaj + DiasDelMes(mes,year) # type: ignore
 	diaj = diaj + day
 	return diaj
 
